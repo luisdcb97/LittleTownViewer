@@ -23,4 +23,12 @@ public abstract class Button implements Drawable, MouseClick {
     public void setWindow(@NotNull PApplet window){
         this.window = window;
     }
+
+    public int getX(){
+        return this.x;
+    }
+
+    public int getY(){
+        return this.y;
+    }
 }
