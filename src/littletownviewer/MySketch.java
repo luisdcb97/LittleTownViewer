@@ -3,6 +3,11 @@ package littletownviewer;
 import littletownviewer.ui.Notification;
 import processing.core.PApplet;
 
+import java.io.IOException;
+import java.util.logging.FileHandler;
+import java.util.logging.Handler;
+import java.util.logging.Logger;
+
 public class MySketch extends PApplet{
     Notification notificationTray;
     int i = 0;
@@ -35,6 +40,14 @@ public class MySketch extends PApplet{
 
     public static void main(String[] args){
         String[] processingArgs = {"littletownviewer.MySketch"};
-        PApplet.main(processingArgs);
+
+        Handler fh = null;
+        try {
+            fh = new FileHandler("littleTownViewer.log");
+            Logger.getLogger("").addHandler(fh);
+            PApplet.main(processingArgs);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
