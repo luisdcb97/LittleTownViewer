@@ -18,6 +18,7 @@ public abstract class Button implements Drawable, MouseClick {
     protected int width, height;
 
     public abstract boolean isMouseOver();
+    public abstract boolean isMouseOver(float mouseX, float mouseY);
 
     public void setWindow(@NotNull PApplet window){
         this.window = window;

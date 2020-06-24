@@ -1,23 +1,40 @@
 package littletownviewer;
 
+import littletownviewer.ui.Notification;
 import processing.core.PApplet;
 
 public class MySketch extends PApplet{
+    Notification notificationTray;
+    int i = 0;
+
     public void settings(){
-        size(500, 500);
+        size(1200, 675);
+    }
+
+    public void setup(){
+        notificationTray = new Notification(this, "ola");
     }
 
     public void draw(){
-        ellipse(mouseX, mouseY, 50, 50);
+        background(15);
+        if(notificationTray.isShowing()){
+            notificationTray.draw();
+        }
     }
 
-    public void mousePressed(){
-        background(64);
+    public void mouseClicked(){
+        if(notificationTray.isShowing()){
+            notificationTray.mouseClicked();
+        }
+    }
+
+    public void keyTyped(){
+        notificationTray = new Notification(this,
+                "ola" + String.valueOf(++i));
     }
 
     public static void main(String[] args){
-        String[] processingArgs = {"MySketch"};
-        MySketch mySketch = new MySketch();
-        PApplet.runSketch(processingArgs, mySketch);
+        String[] processingArgs = {"littletownviewer.MySketch"};
+        PApplet.main(processingArgs);
     }
 }
