@@ -31,7 +31,7 @@ public class SaveFileButton extends Button{
 
     @Override
     public void setup() {
-
+        this.saveFile.loadGameData();
     }
 
     @Override
@@ -40,8 +40,7 @@ public class SaveFileButton extends Button{
         int color[] = Color.HexToRGB(DEFAULT_STROKE_COLOR);
         window.stroke(color[0], color[1], color[2]);
         window.strokeWeight(2);
-        if(this.isMouseOver(window.mouseX - this.x,
-                window.mouseY - this.y)){
+        if(this.isMouseOver(window.mouseX, window.mouseY)){
             color = Color.HexToRGB(DEFAULT_HOVER_FILL_COLOR);
             window.fill(color[0], color[1], color[2]);
         }
