@@ -2,14 +2,14 @@ package littletownviewer.ui.buttons;
 
 import com.sun.istack.internal.NotNull;
 
-import processing.core.PApplet;
+import littletownviewer.MySketch;
 import processing.core.PGraphics;
 
 import littletownviewer.interactive.MouseClick;
 import littletownviewer.ui.Drawable;
 
 public abstract class Button implements Drawable, MouseClick {
-    protected PApplet window;
+    protected MySketch window;
     protected PGraphics display;
 
     protected Runnable clickAction;
@@ -20,7 +20,7 @@ public abstract class Button implements Drawable, MouseClick {
     public abstract boolean isMouseOver();
     public abstract boolean isMouseOver(float mouseX, float mouseY);
 
-    public void setWindow(@NotNull PApplet window){
+    public void setWindow(@NotNull MySketch window){
         this.window = window;
     }
 

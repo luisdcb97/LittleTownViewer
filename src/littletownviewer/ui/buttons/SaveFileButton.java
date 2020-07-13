@@ -1,9 +1,9 @@
 package littletownviewer.ui.buttons;
 
 import com.sun.istack.internal.NotNull;
+import littletownviewer.MySketch;
 import littletownviewer.SaveFileManager;
 import littletownviewer.ui.Color;
-import processing.core.PApplet;
 import processing.event.MouseEvent;
 
 public class SaveFileButton extends Button{
@@ -12,9 +12,8 @@ public class SaveFileButton extends Button{
     protected static final String DEFAULT_STROKE_COLOR = "#000000";
 
     private SaveFileManager saveFile;
-    private PApplet window;
 
-    public SaveFileButton(@NotNull PApplet window, SaveFileManager saveFile,
+    public SaveFileButton(@NotNull MySketch window, SaveFileManager saveFile,
                           int x, int y, int width, int height)
     {
         this.setWindow(window);
@@ -25,7 +24,7 @@ public class SaveFileButton extends Button{
         this.height = height;
     }
 
-    public void setWindow(@NotNull PApplet window){
+    public void setWindow(@NotNull MySketch window){
         this.window = window;
     }
 
@@ -37,7 +36,7 @@ public class SaveFileButton extends Button{
     @Override
     public void draw(){
         window.rectMode(window.CORNER);
-        int color[] = Color.HexToRGB(DEFAULT_STROKE_COLOR);
+        int[] color = Color.HexToRGB(DEFAULT_STROKE_COLOR);
         window.stroke(color[0], color[1], color[2]);
         window.strokeWeight(2);
         if(this.isMouseOver(window.mouseX, window.mouseY)){

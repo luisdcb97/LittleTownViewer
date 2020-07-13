@@ -9,8 +9,7 @@ import java.io.IOException;
 import java.util.logging.*;
 
 public class MySketch extends PApplet{
-    Notification notificationTray;
-    int i = 0;
+    private Notification notificationTray;
 
     private Screen currentScreen, previousScreen;
 
@@ -19,7 +18,7 @@ public class MySketch extends PApplet{
     }
 
     public void setup(){
-        notificationTray = new Notification(this, "ola");
+        notificationTray = new Notification(this, "", 0);
         currentScreen = new SavesListMenu(this);
         currentScreen.setup();
     }
@@ -35,7 +34,7 @@ public class MySketch extends PApplet{
     @Override
     public void mousePressed(){
         if(notificationTray.isShowing()){
-            notificationTray.mouseClicked();
+            notificationTray.mousePressed();
         }
         else{
             currentScreen.mousePressed();
@@ -43,14 +42,13 @@ public class MySketch extends PApplet{
     }
 
     public void keyTyped(){
-        notificationTray = new Notification(this,
-                "ola" + String.valueOf(++i));
+        currentScreen.keyTyped();
     }
 
     public static void main(String[] args){
         String[] processingArgs = {"littletownviewer.MySketch"};
 
-        Handler fh = null;
+        Handler fh;
         try {
             fh = new FileHandler("littleTownViewer.log");
             fh.setLevel(Level.INFO);
@@ -61,5 +59,9 @@ public class MySketch extends PApplet{
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public void notifyUser(String message){
+        this.notificationTray = new Notification(this, message);
     }
 }

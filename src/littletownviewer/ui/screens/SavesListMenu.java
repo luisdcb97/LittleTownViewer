@@ -1,10 +1,10 @@
 package littletownviewer.ui.screens;
 
+import littletownviewer.MySketch;
 import littletownviewer.SaveFileManager;
 import littletownviewer.ui.Screen;
 import littletownviewer.ui.buttons.SaveFileButton;
 import org.jetbrains.annotations.NotNull;
-import processing.core.PApplet;
 import processing.event.KeyEvent;
 import processing.event.MouseEvent;
 
@@ -12,9 +12,9 @@ public class SavesListMenu extends Screen {
     private static final int NUM_SAVES = 3;
 
 
-    private SaveFileButton saveButtons[];
+    private SaveFileButton[] saveButtons;
 
-    public SavesListMenu(@NotNull PApplet window){
+    public SavesListMenu(@NotNull MySketch window){
         this.setWindow(window);
         this.saveButtons = new SaveFileButton[NUM_SAVES];
         for (int i = 0; i < NUM_SAVES; i++){

@@ -2,8 +2,8 @@ package littletownviewer.ui;
 
 import com.sun.istack.internal.NotNull;
 
+import littletownviewer.MySketch;
 import littletownviewer.ui.buttons.CloseButton;
-import processing.core.PApplet;
 import processing.core.PGraphics;
 import processing.event.MouseEvent;
 
@@ -16,7 +16,7 @@ public class Notification implements Drawable, MouseClick {
     protected static final int BUTTON_PADDING = 10;
     protected static final int DEFAULT_INTERVAL = 3000;
 
-    protected PApplet window;
+    protected MySketch window;
     protected PGraphics display;
     protected CloseButton closeButton;
 
@@ -28,17 +28,17 @@ public class Notification implements Drawable, MouseClick {
     protected int x, y;
     protected int width, height;
 
-    public Notification(@NotNull PApplet window, @NotNull String message){
+    public Notification(@NotNull MySketch window, @NotNull String message){
         this(window, message, DEFAULT_INTERVAL);
     }
 
-    public Notification(@NotNull PApplet window, @NotNull String message,
+    public Notification(@NotNull MySketch window, @NotNull String message,
                         int interval)
     {
         this.setWindow(window);
-        this.width = PApplet.max(
+        this.width = MySketch.max(
                 window.width / 3, MIN_WIDTH);
-        this.height = PApplet.max(
+        this.height = MySketch.max(
                 window.height / 5, MIN_HEIGHT);
         this.display = window.createGraphics(this.width, this.height);
         this.message = message;
@@ -52,7 +52,7 @@ public class Notification implements Drawable, MouseClick {
         this.y = this.window.height - this.height - BUTTON_PADDING;
     }
 
-    public void setWindow(@NotNull PApplet window){
+    public void setWindow(@NotNull MySketch window){
         this.window = window;
     }
 
@@ -89,6 +89,11 @@ public class Notification implements Drawable, MouseClick {
 
     @Override
     public void mouseClicked() {
+        this.mouseClicked(null);
+    }
+
+    @Override
+    public void mouseClicked(MouseEvent event) {
         if (this.showing && this.closeButton.isMouseOver(
                 window.mouseX - this.x, window.mouseY - this.y))
         {
@@ -97,16 +102,23 @@ public class Notification implements Drawable, MouseClick {
     }
 
     @Override
-    public void mouseClicked(MouseEvent event) {}
+    public void mousePressed() {
+        this.mousePressed(null);
+    }
 
     @Override
-    public void mousePressed() {}
+    public void mousePressed(MouseEvent event) {
+        if (this.showing && this.closeButton.isMouseOver(
+                window.mouseX - this.x, window.mouseY - this.y))
+        {
+            this.closeButton.mousePressed();
+        }
+    }
 
     @Override
-    public void mousePressed(MouseEvent event) {}
-
-    @Override
-    public void mouseReleased() {}
+    public void mouseReleased() {
+        this.mouseReleased(null);
+    }
 
     @Override
     public void mouseReleased(MouseEvent event) {}
