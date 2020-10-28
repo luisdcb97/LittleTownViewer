@@ -2,26 +2,26 @@ package littletownviewer.ui.buttons;
 
 import com.sun.istack.internal.NotNull;
 
-import littletownviewer.MySketch;
+import littletownviewer.LittleTownViewer;
 import littletownviewer.ui.Color;
 import processing.core.PGraphics;
 
 import processing.event.MouseEvent;
 
-public class CloseButton extends Button {
+public final class CloseButton extends Button {
     protected static final String DEFAULT_FILL_COLOR = "#FF0000";
     protected static final String DEFAULT_STROKE_COLOR = "#000000";
 
     protected String fillColor;
     protected String strokeColor;
 
-    public CloseButton(@NotNull MySketch window, int x, int y,
+    public CloseButton(@NotNull LittleTownViewer window, int x, int y,
                        int length, @NotNull Runnable clickAction)
     {
         this(window, window.g, x, y, length, clickAction);
     }
 
-    public CloseButton(@NotNull MySketch window, @NotNull PGraphics display,
+    public CloseButton(@NotNull LittleTownViewer window, @NotNull PGraphics display,
                        int x, int y, int length, @NotNull Runnable clickAction)
     {
         this.setWindow(window);
@@ -42,11 +42,7 @@ public class CloseButton extends Button {
 
     @Override
     public boolean isMouseOver(float mouseX, float mouseY) {
-        boolean over = mouseX >= this.x;
-        over &= mouseY >= this.y;
-        over &= mouseX <= this.x + this.width;
-        over &= mouseY <= this.y + this.height;
-        return over;
+        return this.isMouseOverCorner(mouseX, mouseY);
     }
 
     @Override
@@ -81,9 +77,9 @@ public class CloseButton extends Button {
     @Override
     public void draw() {
         display.rectMode(window.CORNER);
-        int[] color = Color.HexToRGB(strokeColor);
+        int[] color = Color.HexToRGBA(strokeColor);
         display.stroke(color[0], color[1], color[2]);
-        color = Color.HexToRGB(fillColor);
+        color = Color.HexToRGBA(fillColor);
         display.fill(color[0], color[1], color[2]);
         display.strokeWeight(2);
         display.rect(x, y, width, height);
