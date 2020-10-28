@@ -5,7 +5,7 @@ It was built to ease reentry into the game after long periods away from it so th
 ---
 
 ## Releases
-Latest release: [First beta release](https://github.com/luisdcb97/LittleTownViewer/releases/tag/v0.1-beta)  
+Latest release: [Second beta release](https://github.com/luisdcb97/LittleTownViewer/releases/tag/v0.1.1-beta)  
 [Previous releases](https://github.com/luisdcb97/LittleTownViewer/releases)
 
 
