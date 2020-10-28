@@ -1,5 +1,6 @@
 package littletownviewer.interactive;
 
+import littletownviewer.LittleTownViewer;
 import processing.event.KeyEvent;
 
 /**
@@ -43,10 +44,10 @@ public interface KeyboardInput {
     /**
      * <p>The {@code keyPressed()} function is called once every time a key is
      * pressed. The key that was pressed is stored in the
-     * {@link littletownviewer.MySketch#key key} variable.</p>
+     * {@link LittleTownViewer#key key} variable.</p>
      *
      * <p>For non-ASCII keys, use the
-     * {@link littletownviewer.MySketch#keyCode keyCode} variable. The keys
+     * {@link LittleTownViewer#keyCode keyCode} variable. The keys
      * included in the ASCII specification (BACKSPACE, TAB, ENTER, RETURN,
      * ESC, and DELETE) do not require checking to see if the key is
      * coded; for those keys, you should simply use the {@code key} variable
@@ -66,10 +67,10 @@ public interface KeyboardInput {
     /**
      * <p>The {@code keyPressed()} function is called once every time a key is
      * pressed. The key that was pressed is stored in the
-     * {@link littletownviewer.MySketch#key key} variable.</p>
+     * {@link LittleTownViewer#key key} variable.</p>
      *
      * <p>For non-ASCII keys, use the
-     * {@link littletownviewer.MySketch#keyCode keyCode} variable. The keys
+     * {@link LittleTownViewer#keyCode keyCode} variable. The keys
      * included in the ASCII specification (BACKSPACE, TAB, ENTER, RETURN,
      * ESC, and DELETE) do not require checking to see if the key is
      * coded; for those keys, you should simply use the {@code key} variable
@@ -91,7 +92,7 @@ public interface KeyboardInput {
     /**
      * <p>The <code>keyReleased()</code> function is called once
      * every time a key is released. The key that was released
-     * will be stored in the {@link littletownviewer.MySketch#key key}
+     * will be stored in the {@link LittleTownViewer#key key}
      * variable.</p>
      */
     void keyReleased();
@@ -99,7 +100,7 @@ public interface KeyboardInput {
     /**
      * <p>The <code>keyReleased()</code> function is called once
      * every time a key is released. The key that was released
-     * will be stored in the {@link littletownviewer.MySketch#key key}
+     * will be stored in the {@link LittleTownViewer#key key}
      * variable.</p>
      *
      * @param event Holds the <code>keyCode</code> for the key released

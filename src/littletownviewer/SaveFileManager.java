@@ -1,6 +1,7 @@
 package littletownviewer;
 
 import com.sun.istack.internal.NotNull;
+import processing.data.JSONArray;
 import processing.data.JSONObject;
 
 import java.util.logging.Logger;
@@ -12,7 +13,7 @@ public class SaveFileManager {
             System.getProperty("user.home") +
                     "\\AppData\\LocalLow\\SmashGames\\Littlewood\\";
 
-    protected MySketch window;
+    protected LittleTownViewer window;
 
     protected JSONObject json;
     protected int saveNumber;
@@ -21,7 +22,7 @@ public class SaveFileManager {
 
     protected String saveFullPath;
 
-    public SaveFileManager(@NotNull MySketch window, int saveNumber){
+    public SaveFileManager(@NotNull LittleTownViewer window, int saveNumber){
         this.setWindow(window);
         this.saveNumber = saveNumber;
         this.saveFullPath = String.format("%sgames%d.json",
@@ -30,7 +31,7 @@ public class SaveFileManager {
         this.json = null;
     }
 
-    private void setWindow(@NotNull MySketch window){
+    private void setWindow(@NotNull LittleTownViewer window){
         this.window = window;
     }
 
@@ -38,7 +39,9 @@ public class SaveFileManager {
         try {
             this.json = window.loadJSONObject(saveFullPath);
             this.fileExists = true;
-            errorLog.info(String.format("Savefile '%s' loaded.", saveFullPath));
+            errorLog.info(String.format("Savefile '%s' loaded.",
+                    saveFullPath.substring(
+                            saveFullPath.lastIndexOf("\\") + 1)));
         } catch(NullPointerException np){
             this.fileExists = false;
             this.json = null;
@@ -81,9 +84,41 @@ public class SaveFileManager {
         }
     }
 
+    public int getInteger(@NotNull String key) {
+        if(fileExists){
+            return this.json.getInt(key);
+        }else {
+            throw new IllegalStateException();
+        }
+    }
+
     public void setString(@NotNull String key, String value) {
         if(fileExists){
             this.json.setString(key, value);
+        }else {
+            throw new IllegalStateException();
+        }
+    }
+
+    public void setInteger(@NotNull String key, int value) {
+        if(fileExists){
+            this.json.setInt(key, value);
+        }else {
+            throw new IllegalStateException();
+        }
+    }
+
+    public JSONArray getJSONArray(@NotNull String key) {
+        if(fileExists){
+            return this.json.getJSONArray(key);
+        }else {
+            throw new IllegalStateException();
+        }
+    }
+
+    public void setJSONArray(@NotNull String key, JSONArray value) {
+        if(fileExists){
+            this.json.setJSONArray(key, value);
         }else {
             throw new IllegalStateException();
         }
