@@ -1,20 +1,20 @@
 package littletownviewer.ui.screens;
 
-import littletownviewer.MySketch;
+import com.sun.istack.internal.NotNull;
+import littletownviewer.LittleTownViewer;
 import littletownviewer.SaveFileManager;
 import littletownviewer.ui.Screen;
 import littletownviewer.ui.buttons.SaveFileButton;
-import org.jetbrains.annotations.NotNull;
 import processing.event.KeyEvent;
 import processing.event.MouseEvent;
 
-public class SavesListMenu extends Screen {
+public final class SavesListMenu extends Screen {
     private static final int NUM_SAVES = 3;
 
 
     private SaveFileButton[] saveButtons;
 
-    public SavesListMenu(@NotNull MySketch window){
+    public SavesListMenu(@NotNull LittleTownViewer window){
         this.setWindow(window);
         this.saveButtons = new SaveFileButton[NUM_SAVES];
         for (int i = 0; i < NUM_SAVES; i++){
