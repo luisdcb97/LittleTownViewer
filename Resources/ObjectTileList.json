@@ -1,0 +1,961 @@
+[
+  {
+    "Name": "Custom"
+  , "SubCategory": [
+    {
+      "Name": "Custom"
+    , "Tiles": [
+      {"Name": "Empty"}
+    ]
+    }
+  ]
+  }
+, {
+  "Name": "Nature"
+, "SubCategory": [
+    {
+      "Name": "Trees & Ores"
+    , "Tiles": [
+      {"Name": "Slimeapple Tree", "DisplayHeight":  2}
+    , {"Name": "Plumberry Tree", "DisplayHeight":  2}
+    , {"Name": "Peachot Tree", "DisplayHeight":  2}
+    , {"Name": "Goldenbell Tree", "DisplayHeight":  2}
+    , {"Name": "Sourpuck Tree", "DisplayHeight":  2}
+    , {"Name": "Goop Tree", "DisplayHeight":  2}
+    , {"Name": "Papayapa Tree", "DisplayHeight":  2}
+    , {"Name": "Crescent Tree", "DisplayHeight":  2}
+    , {"Name": "Ghost Tree", "DisplayHeight":  2}
+    , {"Name": "Jello Tree", "DisplayHeight":  2}
+    , {"Name": "Duriot Tree", "DisplayHeight":  2}
+    , {"Name": "Wizberry Tree", "DisplayHeight":  2}
+    , {"Name": "Tree Stump"}
+    , {"Name": "Small Tree", "DisplayHeight":  2}
+    , {"Name": "Medium Tree", "DisplayHeight":  3}
+    , {"Name": "Tall Tree", "DisplayHeight":  3}
+    , {"Name": "Magic Tree Stump"}
+    , {"Name": "Small Magic Tree", "DisplayHeight":  2}
+    , {"Name": "Medium Magic Tree", "DisplayHeight":  3}
+    , {"Name": "Tall Magic Tree", "DisplayHeight":  3}
+    , {"Name": "Golden Tree Stump"}
+    , {"Name": "Small Golden Tree", "DisplayHeight":  2}
+    , {"Name": "Medium Golden Tree", "DisplayHeight":  3}
+    , {"Name": "Tall Golden Tree", "DisplayHeight":  3}
+    , {"Name": "Alm Tree Stump"}
+    , {"Name": "Small Alm Tree", "DisplayHeight":  2}
+    , {"Name": "Medium Alm Tree", "DisplayHeight":  3}
+    , {"Name": "Tall Alm Tree", "DisplayHeight":  3}
+    , {"Name": "Leif Tree Stump"}
+    , {"Name": "Small Leif Tree", "DisplayHeight":  2}
+    , {"Name": "Medium Leif Tree", "DisplayHeight":  3}
+    , {"Name": "Tall Leif Tree", "DisplayHeight":  3}
+    , {"Name": "Dirt Deposit"}
+    , {"Name": "Grassy Earth Deposit"}
+    , {"Name": "Stone Deposit"}
+    , {"Name": "Magicite Deposit"}
+    , {"Name": "Orichalcum Deposit"}
+    , {"Name": "Dragalium Deposit"}
+    , {"Name": "Wyvernite Deposit"}
+    , {"Name": "Meteorite"}
+    , {"Name": "Weeds"}
+    ]
+    }
+  , {
+      "Name": "Crops"
+    , "Tiles": [
+        {"Name": "Carrot"}
+      , {"Name": "Cabbage"}
+      , {"Name": "Potato"}
+      , {"Name": "Corn"}
+      , {"Name": "Motato"}
+      , {"Name": "Eggplant"}
+      , {"Name": "Onion"}
+      , {"Name": "Kacoomba"}
+      , {"Name": "Bloccoli"}
+      , {"Name": "Radish"}
+      , {"Name": "Punkin"}
+      , {"Name": "Turnops"}
+      ]
+    }
+  , {
+      "Name": "Flowers"
+    , "Tiles": [
+        {"Name": "White Lollypop"}
+      , {"Name": "Red Lollypop"}
+      , {"Name": "Yellow Lollypop"}
+      , {"Name": "Blue Lollypop"}
+      , {"Name": "Pink Lollypop"}
+      , {"Name": "Orange Lollypop"}
+      , {"Name": "Purple Lollypop"}
+      , {"Name": "Rare Lollypop"}
+      , {"Name": "White Zigzag"}
+      , {"Name": "Red Zigzag"}
+      , {"Name": "Yellow Zigzag"}
+      , {"Name": "Blue Zigzag"}
+      , {"Name": "Pink Zigzag"}
+      , {"Name": "Orange Zigzag"}
+      , {"Name": "Purple Zigzag"}
+      , {"Name": "Rare Zigzag"}
+      , {"Name": "White Dewcap"}
+      , {"Name": "Red Dewcap"}
+      , {"Name": "Yellow Dewcap"}
+      , {"Name": "Blue Dewcap"}
+      , {"Name": "Pink Dewcap"}
+      , {"Name": "Orange Dewcap"}
+      , {"Name": "Purple Dewcap"}
+      , {"Name": "Rare Dewcap"}
+      , {"Name": "White Wickid"}
+      , {"Name": "Red Wickid"}
+      , {"Name": "Yellow Wickid"}
+      , {"Name": "Blue Wickid"}
+      , {"Name": "Pink Wickid"}
+      , {"Name": "Orange Wickid"}
+      , {"Name": "Purple Wickid"}
+      , {"Name": "Rare Wickid"}
+      , {"Name": "White Tootsie"}
+      , {"Name": "Red Tootsie"}
+      , {"Name": "Yellow Tootsie"}
+      , {"Name": "Blue Tootsie"}
+      , {"Name": "Pink Tootsie"}
+      , {"Name": "Orange Tootsie"}
+      , {"Name": "Purple Tootsie"}
+      , {"Name": "Rare Tootsie"}
+      , {"Name": "White Floof"}
+      , {"Name": "Red Floof"}
+      , {"Name": "Yellow Floof"}
+      , {"Name": "Blue Floof"}
+      , {"Name": "Pink Floof"}
+      , {"Name": "Orange Floof"}
+      , {"Name": "Purple Floof"}
+      , {"Name": "Rare Floof"}
+      ]
+    }
+  , {
+      "Name": "Animals"
+    , "Tiles": [
+        {"Name": "Fish"}
+      , {"Name": "Bug"}
+      , {"Name": "Bird"}
+      , {"Name": "Chicken"}
+      , {"Name": "Gooey Gel"}
+      , {"Name": "Fluffy Bunny"}
+      , {"Name": "Dragon Lizard"}
+      , {"Name": "Sneaky Fox"}
+      , {"Name": "Curious Turtle"}
+      , {"Name": "Rainbow Bird"}
+      , {"Name": "Pudgy Pongin"}
+      , {"Name": "Cactus"}
+      ]
+    }
+  ]
+}
+, {
+  "Name": "Objects"
+, "SubCategory": [
+    {
+      "Name": "Houses",
+      "Tiles": [
+        {
+          "Name": "My House"
+        , "Width": 4, "DisplayWidth":  4
+        , "Height": 3, "DisplayHeight":  4
+        }
+      , {
+          "Name": "Willow's House"
+        , "Width": 4, "DisplayWidth":  4
+        , "Height": 3, "DisplayHeight":  4
+        }
+      , {
+          "Name": "Dalton's House"
+        , "Width": 4, "DisplayWidth":  4
+        , "Height": 3, "DisplayHeight":  4
+        }
+      , {
+          "Name": "Dudley's House"
+        , "Width": 4, "DisplayWidth":  4
+        , "Height": 3, "DisplayHeight":  4
+        }
+      , {
+          "Name": "Laura's House"
+        , "Width": 4, "DisplayWidth":  4
+        , "Height": 3, "DisplayHeight":  4
+        }
+      , {
+          "Name": "Bubsy's House"
+        , "Width": 4, "DisplayWidth":  4
+        , "Height": 3, "DisplayHeight":  4
+        }
+      , {
+          "Name": "Ash's House"
+        , "Width": 4, "DisplayWidth":  4
+        , "Height": 3, "DisplayHeight":  4
+        }
+      , {
+          "Name": "Lilith's House"
+        , "Width": 4, "DisplayWidth":  4
+        , "Height": 3, "DisplayHeight":  4
+        }
+      , {
+          "Name": "Zana's House"
+        , "Width": 4, "DisplayWidth":  4
+        , "Height": 3, "DisplayHeight":  4
+        }
+      , {
+          "Name": "Terric's House"
+        , "Width": 4, "DisplayWidth":  4
+        , "Height": 3, "DisplayHeight":  4
+        }
+      , {
+          "Name": "Mel's House"
+        , "Width": 4, "DisplayWidth":  4
+        , "Height": 3, "DisplayHeight":  4
+        }
+      , {
+          "Name": "Maximilian's House"
+        , "Width": 4, "DisplayWidth":  4
+        , "Height": 3, "DisplayHeight":  4
+        }
+      , {
+          "Name": "Iris's House"
+        , "Width": 4, "DisplayWidth":  4
+        , "Height": 3, "DisplayHeight":  4
+        }
+      , {
+          "Name": "Dark's House"
+        , "Width": 4, "DisplayWidth":  4
+        , "Height": 3, "DisplayHeight":  4
+        }
+      , {
+          "Name": "Arpeggio's House"
+        , "Width": 4, "DisplayWidth":  4
+        , "Height": 3, "DisplayHeight":  4
+        }
+      , {
+          "Name": "Toby's House"
+        , "Width": 4, "DisplayWidth":  4
+        , "Height": 3, "DisplayHeight":  4
+        }
+      ]
+    }
+  , {
+      "Name": "Structures",
+      "Tiles": [
+        {
+          "Name": "Tavern"
+        , "Width": 5, "DisplayWidth":  5
+        , "Height": 3, "DisplayHeight":  4
+        }
+      , {
+          "Name": "Museum"
+        , "Width": 5, "DisplayWidth":  5
+        , "Height": 3, "DisplayHeight":  4
+        }
+      , {
+          "Name": "My Office"
+        , "Width": 5, "DisplayWidth":  5
+        , "Height": 3, "DisplayHeight":  4
+        }
+      , {
+          "Name": "Marketplace"
+        , "Width": 10, "DisplayWidth":  10
+        , "Height": 7, "DisplayHeight":  7
+        }
+      , {
+          "Name": "General Shop"
+        , "Width": 4, "DisplayWidth":  4
+        , "Height": 3, "DisplayHeight":  4
+        }
+      , {
+          "Name": "Quarry"
+        , "Width": 5, "DisplayWidth":  5
+        , "Height": 3, "DisplayHeight":  4
+        }
+      , {
+          "Name": "Smelter"
+        , "Width": 4, "DisplayWidth":  4
+        , "Height": 3, "DisplayHeight":  4
+        }
+      , {
+          "Name": "Air Balloon Platform"
+        , "Width": 8, "DisplayWidth":  8
+        , "Height": 6, "DisplayHeight":  9
+        }
+      , {
+          "Name": "Beauty Salon"
+        , "Width": 4, "DisplayWidth":  4
+        , "Height": 3, "DisplayHeight":  4
+        }
+      , {
+          "Name": "Coffee Shop"
+        , "Width": 4, "DisplayWidth":  4
+        , "Height": 3, "DisplayHeight":  4
+        }
+      , {
+          "Name": "Crafting Workshop"
+        , "Width": 4, "DisplayWidth":  4
+        , "Height": 3, "DisplayHeight":  4
+        }
+      , {
+          "Name": "Decor Shop"
+        , "Width": 4, "DisplayWidth":  4
+        , "Height": 3, "DisplayHeight":  4
+        }
+      , {
+          "Name": "Lumber Mill"
+        , "Width": 4, "DisplayWidth":  4
+        , "Height": 3, "DisplayHeight":  4
+        }
+      , {
+          "Name": "Town Square"
+        , "Width": 8, "DisplayWidth":  8
+        , "Height": 7, "DisplayHeight":  7
+        }
+      , {
+          "Name": "Chicken Pasture"
+        , "Width": 4, "DisplayWidth":  4
+        , "Height": 3, "DisplayHeight":  3
+        }
+      , {
+          "Name": "Cow Pasture"
+        , "Width": 4, "DisplayWidth":  4
+        , "Height": 3, "DisplayHeight":  3
+        }
+      , {
+          "Name": "Pig Pasture"
+        , "Width": 4, "DisplayWidth":  4
+        , "Height": 3, "DisplayHeight":  3
+        }
+      , {
+          "Name": "Sheep Pasture"
+        , "Width": 4, "DisplayWidth":  4
+        , "Height": 3, "DisplayHeight":  3
+        }
+      , {
+          "Name": "Exotic Pet Area"
+        , "Width": 6, "DisplayWidth":  6
+        , "Height": 4, "DisplayHeight":  4
+        }
+      ]
+    }
+  , {
+      "Name": "Important Town Objects",
+      "Tiles": [
+        {
+          "Name": "Bird Fountain"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Birdhouse"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Bug Hive"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Calendar"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  1
+        }
+      , {
+          "Name": "Wood Fence"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  1
+        }
+      , {
+          "Name": "Compost Bin"
+        , "Width": 2, "DisplayWidth":  2
+        , "Height": 1, "DisplayHeight":  1
+        }
+      , {
+          "Name": "Dewdrop Statue"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Hammer Statue"
+        , "Width": 1, "DisplayWidth": 1
+        , "Height": 1, "DisplayHeight": 1
+        }
+      , {
+          "Name": "Mailbox"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  1
+        }
+      , {
+          "Name": "Well"
+        , "Width": 2, "DisplayWidth":  2
+        , "Height": 2, "DisplayHeight":  3
+        }
+      , {
+          "Name": "Achievement Book"
+        , "Width": 2, "DisplayWidth":  2
+        , "Height": 1, "DisplayHeight":  3
+        }
+      , {
+          "Name": "Weed Harvester"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Golden Bug Statue"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Carrot Statue"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Dew Orb"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Leif Totem"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Alm Totem"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Clover Statue"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Bee Statue"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Quest Board"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Log Statue"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Fossil Statue"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Moonstone"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Golden Fish Statue"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Sunstone"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Slimeapple Statue"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Anchor Statue"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Ribbon Seeker"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "White Lodestone"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Gilded Crafting Statue"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Gilded Axe Statue"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Gilded Bug Net Statue"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Gilded Farming Statue"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Gilded Cooking Statue"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Gilded Fishing Statue"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Gilded Merchanting Statue"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Gilded Glove Statue"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Hedge Fence"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Gilded Pickaxe Statue"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Gilded Tarott Statue"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Ore Converter"
+        , "Width": 2, "DisplayWidth":  2
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Windmill"
+        , "Width": 2, "DisplayWidth":  2
+        , "Height": 1, "DisplayHeight":  5
+        }
+      ]
+    }
+  , {
+      "Name": "Town Decor A",
+      "Tiles": [
+        {
+          "Name": "Earthy Growth"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  1
+        }
+      , {
+          "Name": "Cleric Statue"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  1
+        }
+      , {
+          "Name": "Golden Shroomcap"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  1
+        }
+      , {
+          "Name": "Heart Shroomcap"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  1
+        }
+      , {
+          "Name": "Wizard Statue"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  1
+        }
+      , {
+          "Name": "Treasure Chest"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  1
+        }
+      , {
+          "Name": "Large Chest"
+        , "Width": 2, "DisplayWidth":  2
+        , "Height": 1, "DisplayHeight":  1
+        }
+      , {
+          "Name": "Giant Anchor Statue"
+        , "Width": 2, "DisplayWidth":  2
+        , "Height": 1, "DisplayHeight":  1
+        }
+      , {
+          "Name": "Caravan Cat Statue"
+        , "Width": 2, "DisplayWidth":  2
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Colossal Pillar"
+        , "Width": 2, "DisplayWidth":  2
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Abyssal Shroomcap"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  1
+        }
+      , {
+          "Name": "Archangel Statue"
+        , "Width": 2, "DisplayWidth":  2
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Arpeggio Statue"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Ash Statue"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Willow Statue"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Bubsy Statue"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Laura Statue"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Lilith Statue"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Dalton Statue"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Dark Statue"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Iris Statue"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Dudley Statue"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Maximilian Statue"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Zana Statue"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Mel Statue"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Terric Statue"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Blue Lily"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  1
+        }
+      , {
+          "Name": "Red Lily"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  1
+        }
+      , {
+          "Name": "Yellow Lily"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  1
+        }
+      , {
+          "Name": "Sack of Goods"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  1
+        }
+      , {
+          "Name": "Fenrir Statue"
+        , "Width": 2, "DisplayWidth":  2
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Leviathan Statue"
+        , "Width": 2, "DisplayWidth":  2
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Odin Statue"
+        , "Width": 2, "DisplayWidth":  2
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Salamander Statue"
+        , "Width": 2, "DisplayWidth":  2
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Tarott Card Statue"
+        , "Width": 2, "DisplayWidth":  2
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Floaty Balloon"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Frog Statue"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  1
+        }
+      ]
+    }
+  , {
+      "Name": "Town Decor B",
+      "Tiles": [
+        {
+          "Name": "Round Hedge"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Square Hedge"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Abyssal Pit"
+        , "Width": 2, "DisplayWidth":  2
+        , "Height": 2, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Sunflower"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Parasitic Plant"
+        , "Width": 1, "DisplayWidth": 1
+        , "Height": 1, "DisplayHeight":  1
+        }
+      , {
+          "Name": "Rafflesia"
+        , "Width": 1, "DisplayWidth": 1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Goldfern"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Moonflower"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Mini Slime"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  1
+        }
+      , {
+          "Name": "Gobby Statue"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Calm Rock"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  1
+        }
+      , {
+          "Name": "Dew Palm"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Barrel"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  1
+        }
+      , {
+          "Name": "Crate"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  1
+        }
+      , {
+          "Name": "Green Item Stall"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  1
+        }
+      , {
+          "Name": "Blue Item Stall"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  1
+        }
+      , {
+          "Name": "Red Item Stall"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  1
+        }
+      , {
+          "Name": "Heart Plant"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  1
+        }
+      , {
+          "Name": "Stone Item Display"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  1
+        }
+      , {
+          "Name": "Wooden Item Display"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  1
+        }
+      , {
+          "Name": "Monolith"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  1
+        }
+      , {
+          "Name": "Tall Shroom"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  1
+        }
+      , {
+          "Name": "Short Ancient Pillar"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  1
+        }
+      , {
+          "Name": "Bamboo"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Tall Ancient Pillar"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Teal Garden Flower"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  1
+        }
+      , {
+          "Name": "Orange Garden Flower"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  1
+        }
+      , {
+          "Name": "Yellow Garden Flower"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  1
+        }
+      , {
+          "Name": "Red Garden Flower"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  1
+        }
+      , {
+          "Name": "Pink Garden Flower"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  1
+        }
+      , {
+          "Name": "Red Coral"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Womper Statue"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Prestige Gobby Statue"
+        , "Width": 2, "DisplayWidth":  2
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Prestige Scroll Statue"
+        , "Width": 2, "DisplayWidth":  2
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Prestige Sword Statue"
+        , "Width": 2, "DisplayWidth":  2
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Prestige Tree Statue"
+        , "Width": 2, "DisplayWidth":  2
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Blue Coral"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Blue Garden Flower"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  1
+        }
+      , {
+          "Name": "Magic Sword Statue"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Dirt Mound"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Dark Tree Replica"
+        , "Width": 2, "DisplayWidth":  2
+        , "Height": 1, "DisplayHeight":  2
+        }
+      , {
+          "Name": "Big Dark Tree Replica"
+        , "Width": 1, "DisplayWidth":  1
+        , "Height": 1, "DisplayHeight":  2
+        }
+      ]
+    }
+  ]
+}
+]
