@@ -21,7 +21,7 @@ import java.util.logging.Logger;
 public class InventoryEdit extends Screen {
     private static final Logger errorLog = Logger.getLogger(
             InventoryEdit.class.getName());
-    public static String itemDictionaryFilename = "Resources/itemList.json";
+    public static String itemDictionaryFilename = "Resources/ItemList.json";
 
     private static final int ITEMS_PER_ROW = 7;
     private static final int SIDEBAR_WIDTH = 400;
