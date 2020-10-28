@@ -2,7 +2,7 @@ package littletownviewer.ui;
 
 import com.sun.istack.internal.NotNull;
 
-import littletownviewer.MySketch;
+import littletownviewer.LittleTownViewer;
 import littletownviewer.ui.buttons.CloseButton;
 import processing.core.PGraphics;
 import processing.event.MouseEvent;
@@ -16,7 +16,7 @@ public class Notification implements Drawable, MouseClick {
     protected static final int BUTTON_PADDING = 10;
     protected static final int DEFAULT_INTERVAL = 3000;
 
-    protected MySketch window;
+    protected LittleTownViewer window;
     protected PGraphics display;
     protected CloseButton closeButton;
 
@@ -28,17 +28,17 @@ public class Notification implements Drawable, MouseClick {
     protected int x, y;
     protected int width, height;
 
-    public Notification(@NotNull MySketch window, @NotNull String message){
+    public Notification(@NotNull LittleTownViewer window, @NotNull String message){
         this(window, message, DEFAULT_INTERVAL);
     }
 
-    public Notification(@NotNull MySketch window, @NotNull String message,
+    public Notification(@NotNull LittleTownViewer window, @NotNull String message,
                         int interval)
     {
         this.setWindow(window);
-        this.width = MySketch.max(
+        this.width = LittleTownViewer.max(
                 window.width / 3, MIN_WIDTH);
-        this.height = MySketch.max(
+        this.height = LittleTownViewer.max(
                 window.height / 5, MIN_HEIGHT);
         this.display = window.createGraphics(this.width, this.height);
         this.message = message;
@@ -52,7 +52,7 @@ public class Notification implements Drawable, MouseClick {
         this.y = this.window.height - this.height - BUTTON_PADDING;
     }
 
-    public void setWindow(@NotNull MySketch window){
+    public void setWindow(@NotNull LittleTownViewer window){
         this.window = window;
     }
 

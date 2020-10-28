@@ -31,8 +31,8 @@ public abstract class Grid implements Drawable, MouseClick, MouseDrag,
     protected int[] getGridPositionClicked(double x, double y){
         x = x - this.offsetX;
         y = y - this.offsetY;
-        int i = (int) (x / this.tileSize);
-        int j = (int) (y / this.tileSize);
+        int i = (int) Math.floor(x / this.tileSize);
+        int j = (int) Math.floor(y / this.tileSize);
 
         return new int[]{i, j};
     }
