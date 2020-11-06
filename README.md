@@ -5,8 +5,10 @@ It was built to ease reentry into the game after long periods away from it so th
 ---
 
 ## Releases
-Latest release: [Second beta release](https://github.com/luisdcb97/LittleTownViewer/releases/tag/v0.1.1-beta)  
+Latest release: [Non-Windows PC platforms support](https://github.com/luisdcb97/LittleTownViewer/releases/tag/v0.1.2-beta)  
 [Previous releases](https://github.com/luisdcb97/LittleTownViewer/releases)
+
+**Note for Mac Users:** LTV relies on a library to draw its User Interface called Processing which uses Java 8 code. As such __LTV will only run with JRE 8.__ You can download it [here](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html).
 
 
 ---
@@ -18,7 +20,7 @@ LTV is mainly controlled using the mouse, with certain screens accepting keyboar
   - Escape: Exit the application
 - Edit Object Map
   - W/A/S/D: Move around the map
-   - H: Highlight the currently selected tile type
+  - H: Highlight the currently selected tile type
 
 ---
 
