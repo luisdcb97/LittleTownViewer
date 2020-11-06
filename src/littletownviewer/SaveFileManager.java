@@ -9,9 +9,7 @@ import java.util.logging.Logger;
 public class SaveFileManager {
     private static final Logger errorLog = Logger.getLogger(
             SaveFileManager.class.getName());
-    private static final String APPDATA_PATH =
-            System.getProperty("user.home") +
-                    "\\AppData\\LocalLow\\SmashGames\\Littlewood\\";
+    private static final String saveFolderPath = getSaveFolderPath();
 
     protected LittleTownViewer window;
 
@@ -22,11 +20,56 @@ public class SaveFileManager {
 
     protected String saveFullPath;
 
+    private static String getSaveFolderPath(){
+        String osName = System.getProperty("os.name", "Windows")
+                .toLowerCase();
+        String sep = System.getProperty("file.separator", "/");
+
+        StringBuilder builder =
+                new StringBuilder(System.getProperty("user.home"));
+
+        if(osName.contains("window")){
+            builder.append(sep)
+                    .append("AppData")
+                    .append(sep)
+                    .append("LocalLow")
+                    .append(sep)
+                    .append("SmashGames")
+                    .append(sep)
+                    .append("Littlewood")
+                    .append(sep);
+        }
+        else if(osName.contains("mac")){
+            builder.append(sep)
+                    .append("Library")
+                    .append(sep)
+                    .append("Application Support")
+                    .append(sep)
+                    .append("SmashGames")
+                    .append(sep)
+                    .append("Littlewood")
+                    .append(sep);
+        }
+        else{
+            builder.append(sep)
+                    .append(".config")
+                    .append(sep)
+                    .append("unity3d")
+                    .append(sep)
+                    .append("SmashGames")
+                    .append(sep)
+                    .append("Littlewood")
+                    .append(sep);
+        }
+
+        return builder.toString();
+    }
+
     public SaveFileManager(@NotNull LittleTownViewer window, int saveNumber){
         this.setWindow(window);
         this.saveNumber = saveNumber;
         this.saveFullPath = String.format("%sgames%d.json",
-                APPDATA_PATH, saveNumber);
+                saveFolderPath, saveNumber);
         this.fileExists = false;
         this.json = null;
     }
@@ -39,9 +82,7 @@ public class SaveFileManager {
         try {
             this.json = window.loadJSONObject(saveFullPath);
             this.fileExists = true;
-            errorLog.info(String.format("Savefile '%s' loaded.",
-                    saveFullPath.substring(
-                            saveFullPath.lastIndexOf("\\") + 1)));
+            errorLog.info(String.format("Savefile '%s' loaded.", saveNumber));
         } catch(NullPointerException np){
             this.fileExists = false;
             this.json = null;
@@ -61,7 +102,7 @@ public class SaveFileManager {
         this.window.saveJSONObject(json, saveFullPath);
         this.window.saveJSONObject(json,
                 String.format("%sgames%dBACKUP.json",
-                        APPDATA_PATH, this.saveNumber
+                        saveFolderPath, this.saveNumber
                 )
         );
         errorLog.info(String.format("Saved game to file %d", this.saveNumber));
